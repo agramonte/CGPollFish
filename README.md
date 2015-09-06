@@ -1,7 +1,7 @@
 # CGPollFish
 Marmalade PollFish Extension
 
-I am using the Google Play version of the jar.
+I am using the Google Play version of the jar. If you do end up using my extension please consider signing up through this link: http://www.pollfish.com/signup/dev/7066. I think we both get +$20 dollars for our first 500 surveys.
 
 I am in no way associated or employed by PollFish other than the fact that I use the service. Information about their service can be found here: http://pollfish.com/
 
