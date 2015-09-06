@@ -1,0 +1,38 @@
+#
+callbacks
+
+include:
+#include <s3eTypes.h>
+
+
+typedef enum CGPollfishCallback
+{
+    CGPOLLFISH_CALLBACK_RECEIVED = 0,
+    CGPOLLFISH_CALLBACK_NOTAVAILABLE = 1,
+    CGPOLLFISH_CALLBACK_COMPLETED = 2,
+    CGPOLLFISH_CALLBACK_OPENED = 3,
+    CGPOLLFISH_CALLBACK_CLOSED = 4,
+    CGPOLLFISH_CALLBACK_NOTELIGIBLE = 5,
+    CGPOLLFISH_CALLBACK_MAX
+} CGPollfishCallback;
+
+
+typedef enum CGPollFishPosition
+{
+    POSITION_TOP_LEFT   = 1,
+    POSITION_BOTTOM_LEFT = 2,
+    POSITION_MIDDLE_LEFT = 3,
+    POSITION_TOP_RIGHT = 4,
+    POSITION_BOTTOM_RIGHT = 5,
+    POSITION_MIDDLE_RIGHT = 6
+} CGPollFishPosition;
+
+
+functions:
+
+
+void PollFishInit(const char* apiKey, CGPollFishPosition position, int padding, const char* userId) run_on_os_thread
+
+void PollFishHide() run_on_os_thread
+
+void PollFishShow() run_on_os_thread
