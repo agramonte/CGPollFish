@@ -30,105 +30,105 @@ Memory map
 .interp         0x00000114       0x13
  ** fill        0x00000114       0x13
 
-.dynsym         0x00000128       0xf0
- ** dynsym      0x00000128       0xf0
+.dynsym         0x00000128      0x100
+ ** dynsym      0x00000128      0x100
 
-.dynstr         0x00000218      0x15b
+.dynstr         0x00000228      0x162
  ** string table
-                0x00000218      0x15b
+                0x00000228      0x162
 
-.hash           0x00000374       0x50
- ** hash        0x00000374       0x50
+.hash           0x0000038c       0x54
+ ** hash        0x0000038c       0x54
 
-.rel.dyn        0x000003c4       0x30
+.rel.dyn        0x000003e0       0xc0
  ** dynamic relocs
-                0x000003c4       0x30
+                0x000003e0       0xc0
 
-.rel.plt        0x000003f4       0x50
+.rel.plt        0x000004a0       0x58
  ** dynamic relocs
-                0x000003f4       0x50
+                0x000004a0       0x58
 
-.plt            0x00000444       0x8c
- ** PLT         0x00000444       0x8c
+.plt            0x000004f8       0x98
+ ** PLT         0x000004f8       0x98
 
-.text           0x000004d0      0x91c
- .text.exit     0x000004d0       0x10 /Users/adriangomez/android-ndk-r10d//platforms/android-14/arch-arm/usr/lib/crtbegin_so.o
-                0x000004d0                __on_dlclose
- .text          0x000004e0       0x34 /Users/adriangomez/android-ndk-r10d//platforms/android-14/arch-arm/usr/lib/crtbegin_so.o
-                0x000004e0                __atexit_handler_wrapper
-                0x000004f4                atexit
- .text          0x00000514      0x5a8 release/CGPollfish_platform.os
-                0x000005cc                native_notifyReceived(_JNIEnv*, _jobject*)
-                0x00000604                native_notifyNotAvailable(_JNIEnv*, _jobject*)
-                0x0000063c                native_notifyCompleted(_JNIEnv*, _jobject*)
-                0x00000674                native_notifyOpened(_JNIEnv*, _jobject*)
-                0x000006ac                native_notifyClosed(_JNIEnv*, _jobject*)
-                0x000006e4                native_notifyNotEligible(_JNIEnv*, _jobject*)
-                0x0000071c                CGPollfishInit_platform()
-                0x00000920                CGPollfishTerminate_platform()
-                0x0000097c                PollFishInit_platform(char const*, CGPollFishPosition, int, char const*)
-                0x00000a1c                PollFishHide_platform()
-                0x00000a6c                PollFishShow_platform()
+.text           0x00000590      0x958
+ .text.exit     0x00000590       0x10 /Users/adriangomez/android-ndk-r10d//platforms/android-14/arch-arm/usr/lib/crtbegin_so.o
+                0x00000590                __on_dlclose
+ .text          0x000005a0       0x34 /Users/adriangomez/android-ndk-r10d//platforms/android-14/arch-arm/usr/lib/crtbegin_so.o
+                0x000005a0                __atexit_handler_wrapper
+                0x000005b4                atexit
+ .text          0x000005d4      0x5e4 release/CGPollfish_platform.os
+                0x000005d4                native_notifyReceived(_JNIEnv*, _jobject*)
+                0x0000060c                native_notifyNotAvailable(_JNIEnv*, _jobject*)
+                0x00000644                native_notifyCompleted(_JNIEnv*, _jobject*)
+                0x0000067c                native_notifyOpened(_JNIEnv*, _jobject*)
+                0x000006b4                native_notifyClosed(_JNIEnv*, _jobject*)
+                0x000006ec                native_notifyNotEligible(_JNIEnv*, _jobject*)
+                0x000007dc                CGPollfishInit_platform()
+                0x00000a1c                CGPollfishTerminate_platform()
+                0x00000a78                PollFishInit_platform(char const*, CGPollFishPosition, int, char const*)
+                0x00000b18                PollFishHide_platform()
+                0x00000b68                PollFishShow_platform()
  .text._ZN7_JNIEnv9NewObjectEP7_jclassP10_jmethodIDz
-                0x00000abc       0x38 release/CGPollfish_platform.os
-                0x00000abc                _JNIEnv::NewObject(_jclass*, _jmethodID*, ...)
+                0x00000bb8       0x38 release/CGPollfish_platform.os
+                0x00000bb8                _JNIEnv::NewObject(_jclass*, _jmethodID*, ...)
  .text._ZN7_JNIEnv14CallVoidMethodEP8_jobjectP10_jmethodIDz
-                0x00000af4       0x38 release/CGPollfish_platform.os
-                0x00000af4                _JNIEnv::CallVoidMethod(_jobject*, _jmethodID*, ...)
- .text          0x00000b2c       0x14 release/CGPollfish.os
-                0x00000b2c                CGPollfishInit()
-                0x00000b30                CGPollfishTerminate()
-                0x00000b34                PollFishInit
-                0x00000b38                PollFishHide
-                0x00000b3c                PollFishShow
- .text          0x00000b40      0x21c release/CGPollfish_register.os
-                0x00000b40                CGPollfishRegister
-                0x00000b70                CGPollfishUnRegister
-                0x00000bfc                CGPollfishRegisterExt()
-                0x00000cac                RegisterExt
- .text          0x00000d5c        0x0 /Applications/Marmalade.app/Contents/s3e/edk/lib/android/libedk.a(edk_helpers.o)
+                0x00000bf0       0x38 release/CGPollfish_platform.os
+                0x00000bf0                _JNIEnv::CallVoidMethod(_jobject*, _jmethodID*, ...)
+ .text          0x00000c28       0x14 release/CGPollfish.os
+                0x00000c28                CGPollfishInit()
+                0x00000c2c                CGPollfishTerminate()
+                0x00000c30                PollFishInit
+                0x00000c34                PollFishHide
+                0x00000c38                PollFishShow
+ .text          0x00000c3c      0x21c release/CGPollfish_register.os
+                0x00000c3c                CGPollfishRegister
+                0x00000c6c                CGPollfishUnRegister
+                0x00000cf8                CGPollfishRegisterExt()
+                0x00000da8                RegisterExt
+ .text          0x00000e58        0x0 /Applications/Marmalade.app/Contents/s3e/edk/lib/android/libedk.a(edk_helpers.o)
  .text.s3eEdkErrorSetString
-                0x00000d5c       0x30 /Applications/Marmalade.app/Contents/s3e/edk/lib/android/libedk.a(edk_helpers.o)
-                0x00000d5c                s3eEdkErrorSetString
+                0x00000e58       0x30 /Applications/Marmalade.app/Contents/s3e/edk/lib/android/libedk.a(edk_helpers.o)
+                0x00000e58                s3eEdkErrorSetString
  .text.s3eEdkThreadRunOnOS
-                0x00000d8c       0x30 /Applications/Marmalade.app/Contents/s3e/edk/lib/android/libedk.a(edk_helpers.o)
-                0x00000d8c                s3eEdkThreadRunOnOS
+                0x00000e88       0x30 /Applications/Marmalade.app/Contents/s3e/edk/lib/android/libedk.a(edk_helpers.o)
+                0x00000e88                s3eEdkThreadRunOnOS
  .text.s3eEdkThreadRunOnOSAsync
                 0xffffffffffffffff       0x30 /Applications/Marmalade.app/Contents/s3e/edk/lib/android/libedk.a(edk_helpers.o)
-                0x00000dbc                s3eEdkThreadRunOnOSAsync
- .text          0x00000dec        0x0 /Users/adriangomez/android-ndk-r10d//platforms/android-14/arch-arm/usr/lib/crtend_so.o
+                0x00000eb8                s3eEdkThreadRunOnOSAsync
+ .text          0x00000ee8        0x0 /Users/adriangomez/android-ndk-r10d//platforms/android-14/arch-arm/usr/lib/crtend_so.o
 
-.rodata         0x00000dec       0x71
+.rodata         0x00000ee8      0x101
  ** merge strings
-                0x00000dec       0x71
+                0x00000ee8      0x101
 
-.fini_array     0x00001eac        0x8
- .fini_array    0x00001eac        0x4 /Users/adriangomez/android-ndk-r10d//platforms/android-14/arch-arm/usr/lib/crtbegin_so.o
- .fini_array    0x00001eb0        0x4 /Users/adriangomez/android-ndk-r10d//platforms/android-14/arch-arm/usr/lib/crtend_so.o
+.fini_array     0x00002ea8        0x8
+ .fini_array    0x00002ea8        0x4 /Users/adriangomez/android-ndk-r10d//platforms/android-14/arch-arm/usr/lib/crtbegin_so.o
+ .fini_array    0x00002eac        0x4 /Users/adriangomez/android-ndk-r10d//platforms/android-14/arch-arm/usr/lib/crtend_so.o
 
-.init_array     0x00001eb4        0x4
- .init_array    0x00001eb4        0x4 /Users/adriangomez/android-ndk-r10d//platforms/android-14/arch-arm/usr/lib/crtend_so.o
+.init_array     0x00002eb0        0x4
+ .init_array    0x00002eb0        0x4 /Users/adriangomez/android-ndk-r10d//platforms/android-14/arch-arm/usr/lib/crtend_so.o
 
-.dynamic        0x00001eb8      0x100
- ** dynamic     0x00001eb8      0x100
+.dynamic        0x00002eb4      0x100
+ ** dynamic     0x00002eb4      0x100
 
-.got            0x00001fb8       0x48
- ** GOT         0x00001fb8       0x14
- ** GOT PLT     0x00001fcc       0x34
+.got            0x00002fb4       0x4c
+ ** GOT         0x00002fb4       0x14
+ ** GOT PLT     0x00002fc8       0x38
 
-.data           0x00002000        0x4
- .data          0x00002000        0x4 /Users/adriangomez/android-ndk-r10d//platforms/android-14/arch-arm/usr/lib/crtbegin_so.o
-                0x00002000                __dso_handle
- .data          0x00002004        0x0 release/CGPollfish_platform.os
- .data          0x00002004        0x0 release/CGPollfish.os
- .data          0x00002004        0x0 release/CGPollfish_register.os
- .data          0x00002004        0x0 /Applications/Marmalade.app/Contents/s3e/edk/lib/android/libedk.a(edk_helpers.o)
- .data          0x00002004        0x0 /Users/adriangomez/android-ndk-r10d//platforms/android-14/arch-arm/usr/lib/crtend_so.o
+.data           0x00003000       0x4c
+ .data          0x00003000        0x4 /Users/adriangomez/android-ndk-r10d//platforms/android-14/arch-arm/usr/lib/crtbegin_so.o
+                0x00003000                __dso_handle
+ .data          0x00003004       0x48 release/CGPollfish_platform.os
+ .data          0x0000304c        0x0 release/CGPollfish.os
+ .data          0x0000304c        0x0 release/CGPollfish_register.os
+ .data          0x0000304c        0x0 /Applications/Marmalade.app/Contents/s3e/edk/lib/android/libedk.a(edk_helpers.o)
+ .data          0x0000304c        0x0 /Users/adriangomez/android-ndk-r10d//platforms/android-14/arch-arm/usr/lib/crtend_so.o
 
-.bss            0x00002004       0x10
- .bss           0x00002004        0x0 /Users/adriangomez/android-ndk-r10d//platforms/android-14/arch-arm/usr/lib/crtbegin_so.o
- .bss           0x00002004       0x10 release/CGPollfish_platform.os
- .bss           0x00002014        0x0 release/CGPollfish.os
- .bss           0x00002014        0x0 release/CGPollfish_register.os
- .bss           0x00002014        0x0 /Applications/Marmalade.app/Contents/s3e/edk/lib/android/libedk.a(edk_helpers.o)
- .bss           0x00002014        0x0 /Users/adriangomez/android-ndk-r10d//platforms/android-14/arch-arm/usr/lib/crtend_so.o
+.bss            0x0000304c       0x10
+ .bss           0x0000304c        0x0 /Users/adriangomez/android-ndk-r10d//platforms/android-14/arch-arm/usr/lib/crtbegin_so.o
+ .bss           0x0000304c       0x10 release/CGPollfish_platform.os
+ .bss           0x0000305c        0x0 release/CGPollfish.os
+ .bss           0x0000305c        0x0 release/CGPollfish_register.os
+ .bss           0x0000305c        0x0 /Applications/Marmalade.app/Contents/s3e/edk/lib/android/libedk.a(edk_helpers.o)
+ .bss           0x0000305c        0x0 /Users/adriangomez/android-ndk-r10d//platforms/android-14/arch-arm/usr/lib/crtend_so.o

@@ -18,9 +18,6 @@ static jmethodID g_PollFishInit;
 static jmethodID g_PollFishHide;
 static jmethodID g_PollFishShow;
 
-s3eResult CGPollfishInit_platform()
-{
-
 //---------------
 
 void native_notifyReceived(JNIEnv * env, jobject obj){
@@ -42,6 +39,8 @@ void native_notifyNotEligible(JNIEnv * env, jobject obj){
     s3eEdkCallbacksEnqueue(S3E_EXT_CGPOLLFISH_HASH, CGPOLLFISH_CALLBACK_NOTELIGIBLE);
 }
 
+s3eResult CGPollfishInit_platform()
+{
 
     // Get the environment from the pointer
     JNIEnv* env = s3eEdkJNIGetEnv();
@@ -87,7 +86,8 @@ void native_notifyNotEligible(JNIEnv * env, jobject obj){
     if (!g_PollFishShow)
         goto fail;
 
-
+    if(env->RegisterNatives(cls, nativeMethodDefs, sizeof(nativeMethodDefs)/sizeof(nativeMethodDefs[0])))
+        goto fail;
 
     IwTrace(CGPOLLFISH, ("CGPOLLFISH init success"));
     g_Obj = env->NewGlobalRef(obj);
