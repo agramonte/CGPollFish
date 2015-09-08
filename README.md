@@ -28,7 +28,6 @@ typedef enum CGPollFishPosition
     POSITION_BOTTOM_RIGHT = 5,
     
     POSITION_MIDDLE_RIGHT = 6
-    
 } CGPollFishPosition;
 
 
