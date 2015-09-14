@@ -100,7 +100,7 @@ class CGPollfish{
          
          }
          },
-         rootView);
+         rootView, userId);
         
         
     }
