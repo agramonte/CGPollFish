@@ -13,26 +13,21 @@ How to use the extension:
 
 3. Import CGPollfish.h.
 
-4. Call PollFishInit(“your api key”, one of the position from the enum CGPollFishPosition, padding from position number, “not implemented. tested with a random string, but null should work”). Make sure you check if the extension is available before making this call: CGPollfishAvailable();.
+4. Call: 
+PollFishInit(“your api key”, one of the position from the enum CGPollFishPosition, padding from position number, serverToServerCallBackId or random string if you don't want to use it). 
 
-typedef enum CGPollFishPosition
-{
-    POSITION_TOP_LEFT   = 1,
-    
+typedef enum CGPollFishPosition { POSITION_TOP_LEFT   = 1,
     POSITION_BOTTOM_LEFT = 2,
-    
     POSITION_MIDDLE_LEFT = 3,
-    
     POSITION_TOP_RIGHT = 4,
-    
     POSITION_BOTTOM_RIGHT = 5,
-    
-    POSITION_MIDDLE_RIGHT = 6
-} CGPollFishPosition;
+    POSITION_MIDDLE_RIGHT = 6 } CGPollFishPosition;
+5. Make sure you check if the extension is available before making this call: CGPollfishAvailable();.
+
 
 
 Optional:
-1. The following callbacks have been implemented. I have only tested Completed.
+1. The following callbacks have been implemented. I have tested them all.
 
 CGPOLLFISH_CALLBACK_RECEIVED
 
